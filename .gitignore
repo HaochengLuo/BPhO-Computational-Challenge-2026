@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+outputs/
+figures/
+data/
+notebooks/.ipynb_checkpoints/
