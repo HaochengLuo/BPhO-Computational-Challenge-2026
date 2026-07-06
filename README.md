@@ -19,7 +19,10 @@ The 2026 challenge theme is **Quantum Mechanics**. The models will be built in *
 9. Compton scattering
 10. Hydrogenic orbitals
 
-Solutions will be added as the challenge work progresses.
+## Solutions
+
+- `task1/main.py` - random walk with `N` steps of size `s`.
+- `task2/main.py` - Brownian motion with random small particles and momentum-conserving collisions with a large particle.
 
 ## Resources
 
