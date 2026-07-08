@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This repository contains our code for the **British Physics Olympiad (BPhO) Computational Challenge 2026**.
+This repository contains my code for the **British Physics Olympiad (BPhO) Computational Challenge 2026**.
 
-The 2026 challenge theme is **Quantum Mechanics**. The models will be built in **Python** and will focus on simulation, plotting, animation, and visualisation of the challenge tasks.
+The 2026 challenge theme is **Quantum Mechanics**. The models are built in **Python** and focus on simulation, plotting, animation, and visualisation of the challenge tasks.
 
 ## Task Overview
 
