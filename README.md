@@ -25,6 +25,8 @@ The 2026 challenge theme is **Quantum Mechanics**. The models will be built in *
 - `task2/main.py` - Brownian motion with random small particles and momentum-conserving collisions with a large particle.
 - `task3/main.py` - Planck black-body spectra and Einstein heat capacity model.
 - `task4/main.py` - photoelectric stopping voltage for different metals.
+- `task5/main.py` - hydrogen emission spectrum from Bohr model energy levels.
+- `task6/main.py` - electron diffraction rings and straight-line voltage check.
 
 ## Resources
 
