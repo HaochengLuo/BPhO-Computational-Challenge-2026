@@ -23,8 +23,13 @@ plt.figure(figsize=(12, 5))
 plt.subplot(1, 2, 1)
 
 for label, d in d_values.items():
+    # Electron de Broglie wavelength after acceleration through voltage V
     wavelength = h / np.sqrt(2 * m_e * e * V)
+
+    # First-order Bragg condition: wavelength = 2 d sin(phi)
     phi = np.arcsin(wavelength / (2 * d))
+
+    # Ring geometry in the spherical tube: ring_radius = tube_radius sin(2 phi)
     ring_radius = tube_radius * np.sin(2 * phi)
     plt.plot(V / 1000, ring_radius * 1000, label=label)
 
@@ -40,6 +45,7 @@ selected_V = 3000
 screen_radius = tube_radius * 1000
 
 for label, d in d_values.items():
+    # Repeat the same model at one voltage to draw the rings on the screen
     wavelength = h / np.sqrt(2 * m_e * e * selected_V)
     phi = np.arcsin(wavelength / (2 * d))
     ring_radius = tube_radius * np.sin(2 * phi) * 1000
@@ -67,6 +73,9 @@ plt.figure()
 for label, d in d_values.items():
     wavelength = h / np.sqrt(2 * m_e * e * V)
     phi = np.arcsin(wavelength / (2 * d))
+
+    # Since wavelength^2 is proportional to 1/V, (2 sin phi)^2 is also
+    # proportional to 1/V, so this should be a straight line.
     x = (2 * np.sin(phi)) ** 2
     y = 1 / V
     plt.plot(x, y, label=label)
